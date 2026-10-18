@@ -25,6 +25,7 @@
 目前已在固件版本 `2.0.0.35` 的相機版 RX 實測可用，尚不清楚其他設備。
 
 **使用風險請自行負責**
+
 **Use it at your own risk**
 
 腳本由 ChatGPT 6 產生，本人不負任何責任。
@@ -36,17 +37,26 @@
 
 ## 指令
 
-查看裝置
-`lark_mix_rx.py`
+查看裝置：
 
-針對指定HID裝置送心跳包 (選中 device[2] `0xFF90`)
-`lark_mix_rx.py --device 2`
+```lark_mix_rx.py```
 
-停用自動關機
-`lark_mix_rx.py --device 2 --never`
 
-啟用自動關機
-`lark_mix_rx.py --device 2 --auto`
+針對指定HID裝置送心跳包： (選中 device[2] `0xFF90`)
 
-取得目前設定值 (未驗證，實測 LARK MIX 不支援，可能 M2S 可用)
-`lark_mix_rx.py --device 2 --get-shutdown`
+```lark_mix_rx.py --device 2```
+
+
+停用自動關機：
+
+```lark_mix_rx.py --device 2 --never```
+
+
+啟用自動關機：
+
+```lark_mix_rx.py --device 2 --auto```
+
+
+取得目前設定值： (未驗證，實測 LARK MIX 不支援，可能 M2S 可用)
+
+```lark_mix_rx.py --device 2 --get-shutdown```
