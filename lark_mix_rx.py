@@ -124,7 +124,7 @@ def get_shutdown_time(dev):
 def set_shutdown_time(dev, never=True):
 	value = 1 if never else 0
 
-	print(f"\n=== Shutdown Time: {'Never' if never else '15min'} ===")
+	print(f"\n=== Shutdown Time: {'Never' if never else '1 Hour'} ===")
 	packet = build_packet(CMD_SHUTDOWN_TIME, bytes([value]))
 
 	print(f"TX: {dump(packet[:10])}")
